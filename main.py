@@ -44,12 +44,12 @@ def translator():
         else:
             print("Please write correctly")
             break
-    run = input("Do you want to translate another message? Type 'y' or 'n': ")
+    run = input("Do you want to translate another message? Type 'y' or 'n': ").lower()
     if run == 'y':
         translator()
     else:
         print('Have a good day')
         exit()
 
-
-translator()
+if __name__ == "__main__":
+    translator()
